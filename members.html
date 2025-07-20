@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Members | The Grooves</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Amarante&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1 class="Logo">TheGrooves</h1>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <div class="nav-items">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="events.html" class="nav-link">Events</a>
+                <a href="members.html" class="nav-link">Members</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="py-5">
+        <div class="container text-center">
+            <!-- Founders Row -->
+            <h2 class="text-light mb-4">Founders</h2>
+            <div class="row justify-content-center g-4">
+                <div class="col-md-4">
+                    <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg"
+                        class="member-photo" alt="Adrina Sebastin">
+                    <h5 class="text-light pt-3">Adrina Sebastin</h5>
+                    <p class="text-secondary">Founder</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg" class="member-photo"
+                        alt="Ashlia K B">
+                    <h5 class="text-light pt-3">Ashlia K B</h5>
+                    <p class="text-secondary">Co-Founder</p>
+                </div>
+            </div>
+
+            <!-- Teacher In-charge Row -->
+            <h2 class="text-light my-5">Our Mentor</h2>
+            <div class="row justify-content-center g-4">
+                <div class="col-md-4">
+                    <img src="https://images.pexels.com/photos/26692092/pexels-photo-26692092.jpeg" class="member-photo"
+                        alt="Greeshma M">
+                    <h5 class="text-light pt-3">Greeshma M</h5>
+                    <p class="text-secondary">Faculty In-charge</p>
+                </div>
+            </div>
+
+            <!-- Empowering Message -->
+            <section class="team-meassage mt-5 px-4">
+                <h3 class="text-secondary mb-3">More Than a Team</h3>
+                <p class="text-light fs-5">
+                    The Grooves is more than just a dance crew — we are a family bound by rhythm, resilience, and shared
+                    dreams.
+                    Every member, from the passionate rookies to the seasoned performers, brings something unique to our
+                    stage.
+                    Together, we rise, support, and groove as one.
+                </p>
+            </section>
+
+            <!-- Group Photo Row -->
+            <h2 class="text-light mt-5 mb-4">Meet the Full Crew</h2>
+            <img src="https://images.pexels.com/photos/2598630/pexels-photo-2598630.jpeg" class="img-fluid rounded shadow"
+                alt="Team Group Photo">
+        </div>
+    </main>
+
+    <footer class="text-center py-4 text-secondary bg-dark">
+        &copy; 2025 The Grooves | All Rights Reserved
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-items').classList.toggle('active');
+        }
+
+        // Close nav when clicked outside
+        document.addEventListener('click', function (event) {
+            const navItems = document.querySelector('.nav-items');
+            const hamburger = document.querySelector('.hamburger');
+            if (!navItems.contains(event.target) && !hamburger.contains(event.target)) {
+                navItems.classList.remove('active');
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

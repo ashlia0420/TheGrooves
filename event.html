@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events | The Grooves</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Amarante&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1 class="Logo">TheGrooves</h1>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <div class="nav-items">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="event.html" class="nav-link">Events</a>
+                <a href="members.html" class="nav-link">Members</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="events-main">
+        <div class="container-fluid px-4 px-lg-5">
+            <div class="row">
+                <!-- Main Grid -->
+                <div class="col-12 col-lg-9 offset-lg-1" id="events-grid">
+                    <h2 class="text-light mb-4">Past Performances & Highlights</h2>
+                    <div class="row g-4">
+                        <!-- Repeat these cards -->
+                        <div class="col-md-6 col-xl-4">
+                            <div class="event-card fade-in">
+                                <img src="https://images.pexels.com/photos/11063359/pexels-photo-11063359.jpeg"
+                                    class="img-fluid rounded" alt="Event 1">
+                                <div class="event-info p-2">
+                                    <h5>Dance Battle Night</h5>
+                                    <p>Electrifying performances from our crew that set the stage on fire!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="event-card fade-in">
+                                <img src="https://images.pexels.com/photos/26576010/pexels-photo-26576010.jpeg" class="img-fluid rounded"
+                                    alt="Event 1">
+                                <div class="event-info p-2">
+                                    <h5>Fusion Fiesta</h5>
+                                    <p>Mixing traditional and modern dance styles in perfect harmony.</p>
+
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="event-card fade-in">
+                                <img src="https://images.pexels.com/photos/32434252/pexels-photo-32434252.jpeg" class="img-fluid rounded"
+                                    alt="Event 1">
+                                <div class="event-info p-2">
+                                    <h5>GrooveFest</h5>
+                                    <p>Our biggest annual event showcasing top performances.</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="event-card fade-in">
+                                <img src="https://images.pexels.com/photos/30427779/pexels-photo-30427779.jpeg" class="img-fluid rounded"
+                                    alt="Event 1">
+                                <div class="event-info p-2">
+                                    <h5>Street Jam Session</h5>
+                                    <p>Raw, spontaneous street-style dancing around campus.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="event-card fade-in">
+                                <img src="https://images.pexels.com/photos/30636001/pexels-photo-30636001.jpeg"
+                                    alt="Event 1">
+                                <div class="event-info p-2">
+                                    <h5>Spotlight Solo Series</h5>
+                                    <p>Solo dancers sharing their powerful personal stories into an art.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="event-card fade-in">
+                                <img src="https://images.pexels.com/photos/3753820/pexels-photo-3753820.jpeg" class="img-fluid rounded"
+                                    alt="Event 1">
+                                <div class="event-info p-2">
+                                    <h5>Contemporary Spotlight</h5>
+                                    <p>Modern dance blending emotion and storytelling through powerful, fluid movements.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="event-card fade-in">
+                                <img src="https://images.pexels.com/photos/31521701/pexels-photo-31521701.jpeg" class="img-fluid rounded"
+                                    alt="Event 1">
+                                <div class="event-info p-2">
+                                    <h5>Nritya Sandhya</h5>
+                                    <p>An elegant evening showcasing traditional Indian classical dance forms
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- More cards... (as shown earlier) -->
+                    </div>
+                </div>
+    
+                <!-- Floating Sidebar -->
+                <div class="floating-sidebar" id="sidebar">
+                    <div class="sidebar-header">
+                        <h5>Upcoming Events</h5>
+                        <button id="toggleSidebar" class="btn btn-sm text-light">⨯</button>
+                    </div>
+                    <ul class="upcoming-list">
+                        <li><strong>Aug 15, 2025:</strong> Dance Battle Night</li>
+                        <li><strong>Sep 5, 2025:</strong> Freestyle Workshop</li>
+                        <li><strong>Oct 10, 2025:</strong> Cultural Showdown</li>
+                        <li><strong>Nov 22, 2025:</strong> Flash Mob Show</li>
+                    </ul>
+                </div>
+    
+                <!-- Minimized Toggle Button -->
+                <button id="showSidebarBtn" class="btn btn-secondary minimized-btn">Upcoming Events</button>
+            </div>
+        </div>
+    </main>
+      
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-items').classList.toggle('active');
+        }
+        document.addEventListener('click', function (event) {
+            const navItems = document.querySelector('.nav-items');
+            const hamburger = document.querySelector('.hamburger');
+            if (!navItems.contains(event.target) && !hamburger.contains(event.target) && navItems.classList.contains('active')) {
+                navItems.classList.remove('active');
+            }
+        });
+
+        // Fade-in animation on scroll
+        document.addEventListener("DOMContentLoaded", function () {
+            const faders = document.querySelectorAll(".fade-in");
+            const appearOptions = { threshold: 0.2, rootMargin: "0px 0px -50px 0px" };
+            const appearOnScroll = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) return;
+                    entry.target.classList.add("visible");
+                    observer.unobserve(entry.target);
+                });
+            }, appearOptions);
+            faders.forEach(fader => appearOnScroll.observe(fader));
+        });
+    </script>
+    <script>
+        const sidebar = document.getElementById('sidebar');
+        const toggleBtn = document.getElementById('toggleSidebar');
+        const showBtn = document.getElementById('showSidebarBtn');
+
+        toggleBtn.addEventListener('click', () => {
+            sidebar.classList.add('hide');
+            showBtn.classList.add('show');
+        });
+
+        showBtn.addEventListener('click', () => {
+            sidebar.classList.remove('hide');
+            showBtn.classList.remove('show');
+        });
+    </script>
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

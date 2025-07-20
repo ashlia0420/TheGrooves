@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Grooves</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Amarante&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h1 class="Logo">TheGrooves</h1>
+
+      <div class="hamburger" onclick="toggleMenu()">
+        ☰
+      </div>
+
+      <div class="nav-items">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="event.html" class="nav-link">Events</a>
+        <a href="members.html" class="nav-link">Members</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HOME PAGE CONTENT -->
+  <main id="home">
+    <!-- Welcome Message -->
+    <section class="welcome fade-in">
+      <div class="container-xl">
+        <h2>Welcome to The Grooves!</h2>
+        <p>We are The Grooves, the official dance team of College of Engineering, Cherthala. Dedicated to
+          celebrating dance in all its forms, we bring together passion and precision across styles from hip-hop
+          to classical. No matter your rhythm, we groove as one.
+        </p>
+        <br>
+        <p>Curious about our vibe?</p>
+        <a href="about.html" class="btn direct-btn mt-3">Find Out More</a>
+      </div>
+    </section>
+
+    <!-- Quick Links to Upcoming Events -->
+    <section class="quick-links fade-in">
+      <h3 class="pb-4 fs-1">Upcoming Events You Can’t Miss!</h3>
+      <ul>
+        <ul>
+          <li><a href="#">🔥 Dance Battle Night – Aug 15, 2025</a></li>
+          <li><a href="#">💃 Workshop: Freestyle Basics – Sep 5, 2025</a></li>
+        </ul>
+      </ul>
+      <p class="events-invite">Get ready to show your moves, learn new styles, and vibe with us!</p>
+      <br>
+      <a href="event.html" class="direct-btn">See All Events</a>
+    </section>
+
+    <!-- Carousel -->
+    <section class="carousel fade-in">
+      <h3>Moments from Our Performances</h3>
+      <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true" data-bs-interval="2800">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://images.pexels.com/photos/3753820/pexels-photo-3753820.jpeg" class="d-block w-100"
+              alt="Performance 1">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.pexels.com/photos/690597/pexels-photo-690597.jpeg" class="d-block w-100"
+              alt="Performance 2">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.pexels.com/photos/14106735/pexels-photo-14106735.jpeg" class="d-block w-100"
+              alt="Performance 3">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.pexels.com/photos/26576010/pexels-photo-26576010.jpeg" class="d-block w-100"
+              alt="Performance 4">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.pexels.com/photos/31521701/pexels-photo-31521701.jpeg" class="d-block w-100"
+              alt="Performance 5">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Social Media Links -->
+    <section class="social-media fade-in">
+      <h3>Connect with Us</h3>
+      <p>Follow us on social media for the latest updates, behind-the-scenes fun, and more!</p>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/thegrooves.cec?igsh=MTR3dm4zdHk1dWh6Mg%3D%3D&utm_source=qr" target="_blank"
+          aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://youtube.com" target="_blank" aria-label="YouTube">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://discord.gg/YOUR_INVITE_CODE" target="_blank" aria-label="Discord">
+          <i class="fab fa-discord"></i>
+        </a>
+      </div>
+      <p class="userid">@thegrooves.cec</p>
+    </section>
+
+  </main>
+  
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-items').classList.toggle('active');
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+    integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
