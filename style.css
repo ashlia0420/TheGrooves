@@ -802,4 +802,8 @@ footer {
     .events-sidebar {
         max-width: 100%;
     }
+    #showSidebarBtn{
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
 }
